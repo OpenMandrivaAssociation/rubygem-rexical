@@ -28,7 +28,7 @@ BuildArch:	noarch
 Documents, RDoc & RI documentation for %{name}.
 
 %prep
-%gem_unpack
+%setup -q
 
 %build
 %gem_build
