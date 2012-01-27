@@ -2,8 +2,8 @@
 
 Summary:    Rexical is a lexical scanner generator
 Name:       rubygem-%{oname}
-Version:    1.0.4
-Release:    %mkrel 1
+Version:    1.0.5
+Release:    1
 Group:      Development/Ruby
 License:    LGPLv2
 URL:        http://github.com/tenderlove/rexical/tree/master
@@ -26,7 +26,6 @@ It is designed for use with Racc.
 %build
 
 %install
-rm -rf %{buildroot}
 mkdir -p %{buildroot}%{ruby_gemdir}
 gem install --local --install-dir %{buildroot}%{ruby_gemdir} \
             --force --rdoc %{SOURCE0}
@@ -37,11 +36,7 @@ find %{buildroot}%{ruby_gemdir}/gems/%{oname}-%{version}/bin -type f | xargs chm
 
 sed -i 's!#!.*!#!/usr/bin/env ruby' %{buildroot}%{ruby_gemdir}/gems/%{oname}-%{version}/test/rex*
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-, root, root, -)
 %{_bindir}/rex
 %dir %{ruby_gemdir}/gems/%{oname}-%{version}/
 %{ruby_gemdir}/gems/%{oname}-%{version}/bin/
