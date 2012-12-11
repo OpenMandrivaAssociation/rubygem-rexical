@@ -53,3 +53,25 @@ sed -i 's!#!.*!#!/usr/bin/env ruby' %{buildroot}%{ruby_gemdir}/gems/%{oname}-%{v
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/README.rdoc
 %{ruby_gemdir}/cache/%{oname}-%{version}.gem
 %{ruby_gemdir}/specifications/%{oname}-%{version}.gemspec
+
+
+%changelog
+* Wed Feb 15 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.0.5-2
++ Revision: 774161
+- mass rebuild of ruby packages against ruby 1.9.1
+
+* Fri Jan 27 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.0.5-1
++ Revision: 769360
+- version update 1.0.5
+
+* Sat Dec 04 2010 Rémy Clouard <shikamaru@mandriva.org> 1.0.4-1mdv2011.0
++ Revision: 609238
+- %gem_build macros are broken at the moment, using classic method from
+  gem2rpm to build the package for the moment.
+
+  + Per Øyvind Karlsen <peroyvind@mandriva.org>
+    - imported package rubygem-rexical
+
+
+* Mon Nov 01 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.0.4-1
+- Initial package
