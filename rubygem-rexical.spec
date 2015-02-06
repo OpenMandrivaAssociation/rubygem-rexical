@@ -3,7 +3,7 @@
 Summary:    Rexical is a lexical scanner generator
 Name:       rubygem-%{oname}
 Version:    1.0.5
-Release:	2
+Release:	3
 Group:      Development/Ruby
 License:    LGPLv2
 URL:        http://github.com/tenderlove/rexical/tree/master
