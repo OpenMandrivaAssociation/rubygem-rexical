@@ -6,7 +6,7 @@ Version:    1.0.5
 Release:	3
 Group:      Development/Ruby
 License:    LGPLv2
-URL:        http://github.com/tenderlove/rexical/tree/master
+URL:        https://github.com/tenderlove/rexical/tree/master
 Source0:    http://rubygems.org/gems/%{oname}-%{version}.gem
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:   rubygems
